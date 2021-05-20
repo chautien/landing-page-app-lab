@@ -1,0 +1,48 @@
+// Varriable and default style
+@import "./varriable";
+@import "./reset";
+
+// +++ Conver PX to Rem +++
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  height: 1000vh;
+  padding-top: 9rem;
+}
+a {
+  text-decoration: none;
+  color: $blue-dark;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 2rem 4rem;
+  background-color: $blue-light;
+  color: $gray-light;
+  font-weight: 700;
+  border-radius: 50px;
+  word-spacing: 1px;
+  transition: all 250ms linear;
+  display: inline-block;
+  user-select: none;
+  &:hover {
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+}
+
+// Layout
+// ****** Header ******
+@import "./header";
+// ****** Partner ******
+@import "./partner";
+// ****** Feature ******
+@import "./feature";
