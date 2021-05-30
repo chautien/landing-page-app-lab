@@ -1,0 +1,107 @@
+.reviewer {
+  padding-top: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 500;
+  &-media {
+    position: relative;
+    z-index: 480;
+    &-img {
+      z-index: -1;
+      position: absolute;
+      transform: translateX(-25%);
+    }
+  }
+  &-main {
+    position: relative;
+    z-index: 484;
+  }
+  &-heading {
+    margin-bottom: 4rem;
+    &-title {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 2rem;
+      color: $blue-dark;
+      & span {
+        &:first-child {
+          text-transform: capitalize;
+        }
+        display: block;
+      }
+    }
+    &-desc {
+      line-height: 1.62;
+      color: $gray;
+    }
+  }
+  &-star {
+    margin-bottom: 2.6rem;
+    & i {
+      color: #ffcc00;
+    }
+  }
+  &-comment {
+    margin-bottom: 6rem;
+    &-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $blue-dark;
+      margin-bottom: 3rem;
+    }
+    &-desc {
+      line-height: 1.62;
+      color: $gray;
+    }
+  }
+  &-action {
+    display: grid;
+    grid-template-columns: 1fr 12.5rem;
+    align-items: center;
+  }
+  &-user {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.2rem 3rem;
+    &-image {
+      width: 100%;
+      height: 9rem;
+      border-radius: 50%;
+      object-fit: cover;
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    &-name {
+      align-self: flex-end;
+      color: $blue-dark;
+      font-weight: 600;
+    }
+    &-desc {
+      color: $gray;
+      align-self: flex-start;
+    }
+  }
+  &-access {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-items: center;
+    &-icon {
+      width: 5rem;
+      height: 5rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      &:first-child {
+        color: $gray;
+        border: 1.4px solid gainsboro;
+      }
+      &:last-child {
+        background-color: #eff3f8;
+        color: $blue-light;
+      }
+    }
+  }
+}

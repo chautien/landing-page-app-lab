@@ -1,0 +1,117 @@
+.subs-wrapper {
+  border-bottom: 1.6px solid gainsboro;
+  padding-bottom: 10rem;
+}
+.subs {
+  text-align: center;
+  &-heading {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem;
+    &-title {
+      font-size: 3.6rem;
+      color: $blue-dark;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 3.6rem;
+    }
+    &-desc {
+      color: $gray;
+      line-height: 1.62;
+      margin-bottom: 7rem;
+    }
+  }
+  &-options {
+    margin-bottom: 3.5rem;
+    &-container {
+      display: inline-block;
+      padding: 4px;
+      border-radius: 40px;
+      border: 2px solid rgba(141, 138, 138, 0.308);
+    }
+    &-btn {
+      min-width: 13.6rem;
+      &:last-child {
+        color: rgb(163, 156, 156);
+      }
+    }
+  }
+  &-plant {
+    width: 70rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    grid-gap: 0 4rem;
+    &-item {
+      border-radius: 14px;
+      overflow: hidden;
+      background-color: #fff;
+      &:first-child {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        transition: box-shadow 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+      }
+      &:last-child {
+        border: 1.6px solid rgb(240, 237, 237);
+        transition: box-shadow 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+      }
+    }
+    &-heading {
+      padding: 3.4rem;
+      background-image: linear-gradient(to bottom, #fdfefe, #f4f7f9);
+      &-price {
+        padding: 3.6rem;
+        & > span:first-child {
+          font-weight: 600;
+          font-size: 6rem;
+          line-height: 1;
+          color: $blue-dark;
+        }
+        & > span:last-child {
+          font-size: 1.8rem;
+          color: $gray;
+          line-height: 1;
+        }
+      }
+      &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: $blue-dark;
+      }
+      &-desc {
+        color: $gray;
+        line-height: 1.62;
+      }
+    }
+    &-main {
+      padding: 4rem 5rem 3rem;
+    }
+    &-features {
+      display: block;
+      &-item {
+        margin-bottom: 3rem;
+        color: $gray;
+        &:last-child {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+    &-btn {
+      display: block;
+    }
+    &-other {
+      margin-top: 3rem;
+      display: block;
+      color: #2500f9;
+      font-weight: 500;
+    }
+  }
+}
