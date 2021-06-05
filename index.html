@@ -513,6 +513,83 @@
           </div>
         </div>
       </section>
+      <section class="container ask">
+        <header class="ask-heading">
+          <h3 class="ask-heading-title">Frequently asked questions</h3>
+          <p class="ask-heading-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, maxime voluptatum! Suscipit adipisci repellendus
+            beatae minima iste assumenda optio magni distinctio.
+          </p>
+        </header>
+        <div class="ask-main">
+          <div class="ask-item">
+            <button class="ask-item-collapse">
+              How to contact with riders emergency?
+            </button>
+            <p class="ask-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+              nisi necessitatibus architecto vero repudiandae, ab ducimus
+              corrupti omnis praesentium perferendis mollitia officia aliquid
+              nihil cum quia voluptas rerum cumque doloremque?
+            </p>
+          </div>
+          <script>
+            const collapse = document.querySelectorAll(".ask-item-collapse");
+            collapse.forEach((item) => {
+              item.addEventListener("click", (e) => {
+                const content = e.target.nextElementSibling;
+                console.log(content.style.height);
+                if (content.style.maxHeight) {
+                  console.log("a");
+                  content.style.maxHeight = null;
+                }
+              });
+            });
+          </script>
+        </div>
+      </section>
     </main>
+    <span
+      onclick="scrollToTop(this)"
+      class="scroll-to-top"
+      style="
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: lightblue;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 350ms ease-in-out;
+      "
+    >
+      <i class="fal fa-level-up"></i>
+    </span>
+    <script>
+      const scrollToTopBtn = document.querySelectorAll(".scroll-to-top")[0];
+      window.onscroll = () => {
+        if (document.documentElement.scrollTop < window.innerHeight) {
+          scrollToTopBtn.style.opacity = "0";
+          scrollToTopBtn.style.pointerEvents = "none";
+        } else {
+          scrollToTopBtn.style.opacity = "0.6";
+          scrollToTopBtn.style.pointerEvents = "auto";
+        }
+      };
+      function scrollToTop(e) {
+        const topGap =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(topGap);
+        if (topGap > 0) {
+          window.scrollTo(0, topGap - topGap / 8);
+          requestAnimationFrame(scrollToTop);
+        }
+      }
+    </script>
   </body>
 </html>
