@@ -3,17 +3,23 @@
   margin-bottom: 15rem;
   &-title {
     line-height: 1.75;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4.5rem;
     font-weight: 500;
     font-size: 1.6rem;
   }
   &-logo {
-    width: 94rem;
+    width: 100%;
+    max-width: 100rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 17rem);
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     justify-content: center;
     align-items: center;
-    grid-gap: 0 3rem;
+    justify-items: center;
+    grid-gap: 3rem 3rem;
   }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
 }

@@ -6,13 +6,14 @@
   display: grid;
   grid-template-columns: 1fr 60rem;
   grid-gap: 0 3rem;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem auto;
   &-media {
     position: relative;
     height: 75rem;
     user-select: none;
     &-image {
-      height: 100%;
+      width: 100%;
+      object-fit: contain;
       position: absolute;
       transform: translateX(-10%);
     }
@@ -98,7 +99,7 @@
   &-quote {
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-columns: 55rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 10rem 0;
     align-items: center;
     &-heading {
@@ -120,8 +121,8 @@
   &-more {
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-gap: 4rem 10rem;
     align-items: stretch;
     &-item {
       display: grid;
@@ -189,7 +190,7 @@
     left: -6rem;
     &-image {
       height: 60rem;
-      width: 64rem;
+      width: 100%;
       object-fit: contain;
     }
   }
@@ -209,6 +210,86 @@
       color: $gray;
       line-height: 1.62;
       margin-bottom: 3.4rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .feature {
+    grid-template-columns: 1fr 50rem;
+    &-quote {
+      padding: 0 2rem;
+    }
+  }
+  .learnmore {
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    &-heading {
+      padding: 5rem 2rem;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .feature {
+    grid-template-columns: 1fr 45rem;
+    &-quote {
+      padding: 0 2rem;
+      &-heading {
+        padding-right: 2rem;
+      }
+      &-title {
+        font-size: 3.4rem;
+      }
+      &-text {
+        padding-left: 2rem;
+      }
+    }
+    &-more {
+      &-item {
+        padding: 0 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 764px) {
+  .feature {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    &-media {
+      display: none;
+    }
+    &-hero {
+      grid-column: 1 / span 2;
+      padding: 0 2rem;
+    }
+    &-quote {
+      grid-template-columns: 1fr;
+      padding: 0 2rem;
+      &-heading {
+        padding: 0;
+        border: 0;
+        margin-bottom: 2.6rem;
+      }
+      &-text {
+        padding: 0 2rem;
+      }
+    }
+    &-more {
+      &-item {
+        padding: 0 2rem;
+        text-align: center;
+      }
+      &-badge {
+        margin: 0 auto;
+      }
+    }
+  }
+  .learnmore {
+    grid-template-columns: 1fr;
+    &-media {
+      display: none;
+    }
+    &-heading {
+      padding: 5rem 4rem;
     }
   }
 }

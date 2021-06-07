@@ -37,12 +37,14 @@
     }
   }
   &-plant {
-    width: 70rem;
+    width: 100%;
+    max-width: 70rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
-    grid-gap: 0 4rem;
+    grid-gap: 4rem;
+    justify-content: center;
     &-item {
       border-radius: 14px;
       overflow: hidden;
@@ -113,5 +115,10 @@
       color: #2500f9;
       font-weight: 500;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .subs-plant {
+    grid-template-columns: 80%;
   }
 }

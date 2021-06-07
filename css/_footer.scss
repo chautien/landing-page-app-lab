@@ -1,0 +1,55 @@
+.footer-fluid {
+  height: 53rem;
+  background-color: #09142e;
+  color: #fff;
+  padding-top: 11rem;
+  text-align: center;
+}
+.footer {
+  max-width: 50rem;
+  margin: 0 auto;
+  &-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    & span:first-child {
+      color: $orange-light;
+    }
+  }
+  &-nav {
+    margin-bottom: 4.5rem;
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.4rem;
+      padding: 0 2rem;
+    }
+    &-item a {
+      color: #fff;
+      opacity: 0.8;
+      transition: opacity 250ms ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &-connect {
+    max-width: 20rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-bottom: 7rem;
+    & a {
+      font-size: 2.4rem;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &-copyright {
+    font-size: 1.4rem;
+    color: $gray-light;
+  }
+}

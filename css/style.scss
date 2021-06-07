@@ -28,7 +28,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
-  height: 2000vh;
   padding-top: 9rem;
   overflow-x: hidden;
 }
@@ -75,3 +74,9 @@ a {
 @import "./subs";
 // ****** Reviewer ******
 @import "./reviewer";
+// ****** Ask ******
+@import "./ask";
+// ****** Download ******
+@import "./download";
+// ****** Footer ******
+@import "./footer";

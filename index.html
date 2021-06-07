@@ -57,8 +57,7 @@
               >
             </div>
             <div class="hero-heading-title">
-              <span>Best app for your</span>
-              <span>morden life style</span>
+              <span>Best app for your</span> <span>morden life style</span>
             </div>
             <p class="hero-heading-text">
               Increase productivity with a simple to-to app. App for managing
@@ -390,7 +389,7 @@
             <img
               src="assets/images/main-feature.png"
               alt="main feature"
-              class="main-feature-box-media-img"
+              class="main-feature-media-img"
             />
           </div>
         </div>
@@ -513,42 +512,137 @@
           </div>
         </div>
       </section>
-      <section class="container ask">
-        <header class="ask-heading">
-          <h3 class="ask-heading-title">Frequently asked questions</h3>
-          <p class="ask-heading-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, maxime voluptatum! Suscipit adipisci repellendus
-            beatae minima iste assumenda optio magni distinctio.
-          </p>
-        </header>
-        <div class="ask-main">
-          <div class="ask-item">
-            <button class="ask-item-collapse">
-              How to contact with riders emergency?
-            </button>
-            <p class="ask-item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-              nisi necessitatibus architecto vero repudiandae, ab ducimus
-              corrupti omnis praesentium perferendis mollitia officia aliquid
-              nihil cum quia voluptas rerum cumque doloremque?
+      <div class="ask-wrapper">
+        <section class="container ask">
+          <header class="ask-heading">
+            <h3 class="ask-heading-title">Frequently asked questions</h3>
+            <p class="ask-heading-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, maxime voluptatum! Suscipit adipisci repellendus
+              beatae minima iste assumenda optio magni distinctio.
             </p>
+          </header>
+          <div class="ask-main">
+            <div class="ask-item">
+              <button class="ask-item-collapse" data-collapse="collapse">
+                <span>How to contact with riders emergency?</span>
+                <i class="fal fa-plus"></i>
+              </button>
+              <p class="ask-item-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita nisi necessitatibus architecto vero repudiandae, ab
+                ducimus corrupti omnis praesentium perferendis mollitia officia
+                aliquid nihil cum quia voluptas rerum cumque doloremque?
+              </p>
+            </div>
+            <div class="ask-item">
+              <button class="ask-item-collapse" data-collapse="collapse">
+                <span
+                  >App installation failed, how to update system
+                  information?</span
+                >
+                <i class="fal fa-plus"></i>
+              </button>
+              <p class="ask-item-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita nisi necessitatibus architecto vero repudiandae, ab
+                ducimus corrupti omnis praesentium perferendis mollitia officia
+                aliquid nihil cum quia voluptas rerum cumque doloremque?
+              </p>
+            </div>
+            <div class="ask-item">
+              <button class="ask-item-collapse" data-collapse="collapse">
+                <span>Website response taking time, how to improve?</span>
+                <i class="fal fa-plus"></i>
+              </button>
+              <p class="ask-item-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita nisi necessitatibus architecto vero repudiandae, ab
+                ducimus corrupti omnis praesentium perferendis mollitia officia
+                aliquid nihil cum quia voluptas rerum cumque doloremque?
+              </p>
+            </div>
+            <div class="ask-item">
+              <button class="ask-item-collapse" data-collapse="collapse">
+                <span>New update fixed all bug and issue</span>
+                <i class="fal fa-plus"></i>
+              </button>
+              <p class="ask-item-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita nisi necessitatibus architecto vero repudiandae, ab
+                ducimus corrupti omnis praesentium perferendis mollitia officia
+                aliquid nihil cum quia voluptas rerum cumque doloremque?
+              </p>
+            </div>
+            <div class="ask-item">
+              <button class="ask-item-collapse" data-collapse="collapse">
+                <span>How to contact with riders emergency?</span>
+                <i class="fal fa-plus"></i>
+              </button>
+              <p class="ask-item-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita nisi necessitatibus architecto vero repudiandae, ab
+                ducimus corrupti omnis praesentium perferendis mollitia officia
+                aliquid nihil cum quia voluptas rerum cumque doloremque?
+              </p>
+            </div>
           </div>
-          <script>
-            const collapse = document.querySelectorAll(".ask-item-collapse");
-            collapse.forEach((item) => {
-              item.addEventListener("click", (e) => {
-                const content = e.target.nextElementSibling;
-                console.log(content.style.height);
-                if (content.style.maxHeight) {
-                  console.log("a");
-                  content.style.maxHeight = null;
-                }
-              });
-            });
-          </script>
+        </section>
+      </div>
+      <section class="container download">
+        <div class="download-heading">
+          <h4 class="download-heading-title">Download our App now!</h4>
+          <p class="download-heading-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+            voluptates culpa dolorum similique saepe hic atque aut omnis
+            officiis, tempore ducimus.
+          </p>
+          <div class="download-heading-action">
+            <a href="#" class="download-heading-link">
+              <img src="./assets/images/chplay.png" alt="chplay" />
+            </a>
+            <a href="#" class="download-heading-link">
+              <img src="./assets/images/appstore.png" alt="appstore" />
+            </a>
+          </div>
+        </div>
+        <div class="download-media">
+          <img
+            src="./assets/images/download-bg.png"
+            alt="download background"
+            class="download-media-image"
+          />
         </div>
       </section>
+      <footer class="footer-fluid">
+        <div class="container footer">
+          <h2 class="footer-heading"><span>App</span><span>Lab</span></h2>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="#">Home</a></li>
+              <li class="footer-nav-item"><a href="#">Key Features</a></li>
+              <li class="footer-nav-item"><a href="#">Pricing</a></li>
+              <li class="footer-nav-item"><a href="#">Tertiminal</a></li>
+              <li class="footer-nav-item"><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="footer-connect">
+            <a href="#" class="footer-connect-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-connect-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer-connect-link">
+              <i class="fal fa-hashtag"></i>
+            </a>
+            <a href="#" class="footer-connect-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <small class="footer-copyright">From Châu Tiến with💗</small>
+        </div>
+      </footer>
     </main>
     <span
       onclick="scrollToTop(this)"
@@ -570,6 +664,43 @@
     >
       <i class="fal fa-level-up"></i>
     </span>
+    <!-- collapse -->
+    <script>
+      (function () {
+        const collapse = document.querySelectorAll(
+          "[data-collapse='collapse']"
+        );
+        collapse.forEach((item, index) => {
+          if (index === 0) {
+            const iconItem = item.childNodes[3];
+            iconItem.classList.remove("fa-plus");
+            iconItem.classList.add("fa-minus");
+            item.style.padding = "2.5rem 0 4rem";
+            const firstItem = item.nextSibling.nextSibling;
+            firstItem.style.paddingBottom = "2.5rem";
+            firstItem.style.maxHeight = firstItem.scrollHeight + "px";
+          }
+          item.addEventListener("click", (e) => {
+            const contentExpand = item.nextSibling.nextSibling;
+            const iconItem = item.childNodes[3];
+            if (getComputedStyle(contentExpand).maxHeight === "0px") {
+              iconItem.classList.remove("fa-plus");
+              iconItem.classList.add("fa-minus");
+              contentExpand.style.maxHeight = contentExpand.scrollHeight + "px";
+              contentExpand.style.paddingBottom = "2.5rem";
+              item.style.padding = "2.5rem 0 4rem";
+            } else {
+              item.style.padding = "1rem 0";
+              contentExpand.style.paddingBottom = "0";
+              iconItem.classList.remove("fa-minus");
+              iconItem.classList.add("fa-plus");
+              contentExpand.style.maxHeight = 0;
+            }
+          });
+        });
+      })();
+    </script>
+    <!-- Scroll to top script -->
     <script>
       const scrollToTopBtn = document.querySelectorAll(".scroll-to-top")[0];
       window.onscroll = () => {
@@ -584,7 +715,6 @@
       function scrollToTop(e) {
         const topGap =
           document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(topGap);
         if (topGap > 0) {
           window.scrollTo(0, topGap - topGap / 8);
           requestAnimationFrame(scrollToTop);
